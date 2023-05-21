@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { Coin } from './Coin/Coin'
-import { OrbitControls } from '@react-three/drei'
 export const App = () => {
   
     
@@ -15,8 +14,8 @@ export const App = () => {
        >
            <Canvas>                                                                  
         
-        <Coin/>
-        <OrbitControls/>
+        <Coin goodFor='Good for 1' id={12} type="promos Token" actOfKindness='Donate a coke'/>
+        
     </Canvas>
       </div>
     
